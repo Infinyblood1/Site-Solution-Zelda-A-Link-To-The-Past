@@ -2,14 +2,21 @@
 	text-align: center;
 	font-family: "serif", sans-serif;
 }
-.paragraphe{
-	font-family: "serif", sans-serif;
-}
-.ligne{
+.boite{
 	font-size: 18px;
 	font-family: "serif", sans-serif;
+	text-align: center;
+	list-style-type: none;
+	border: 5px solid black;
+	margin: 30px;
+	border-radius: 12px;
 }
-.ligne2{
+.paragraphe{
+	font-family: "serif", sans-serif;
+	text-align: center;
+	font-size: 18px;
+}
+.ligne{
 	font-size: 18px;
 	font-family: "serif", sans-serif;
 	text-align: center;
@@ -22,4 +29,154 @@
 .image{
 	display: flex;              
     justify-content: center;
+}
+.button {
+	background-color: black;
+	border: 2px solid black;
+	color: black;
+	padding: 5%;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	cursor : cursor : url("image/triforce.cur"),auto;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border-radius: 12px;
+	margin: 30px
+}
+.liquid1 {
+  background: linear-gradient(red 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid1:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+  cursor : url("image/curseur/triforce.cur"),auto;
+}
+.liquid2 {
+  background: linear-gradient(blue 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid2:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+  cursor : url("image/curseur/triforce.cur"),auto;
+}
+.liquid3 {
+  background: linear-gradient(green 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid3:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+  cursor : url("image/curseur/triforce.cur"),auto;
+}
+
+.pulse {
+  background-color: blue;
+  color: white;
+  animation: pulse 1.5s infinite;
+  cursor : url("image/curseur/triforce.cur"),auto;
+}
+
+.border {
+  background-color: transparent;
+  color: red;
+  border: 2px solid red;
+  position: relative;
+}
+
+.border::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.border:hover::after {
+  width: 100%;
+}
+
+.border:hover {
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button1 {border: 2px solid #FFFFFF;}
+.button1 {border-radius: 12px;}
+		
+.black-text-shadow {
+	text-shadow: black 0 -2px;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
 }
