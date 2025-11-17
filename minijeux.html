@@ -7,12 +7,13 @@
 	<title>Mini-Jeux</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="imagefond">
 	<main class="boite">
 		<h1 class = "titre">Mini-Jeux</h1>
 		<br>
 		<br>
-		<p class = "paragraphe">je ne sais pas encore</p>
+		<p class = "paragraphe">Bien que les jeux Zelda regorgent de combat et de donjons, il y a aussi beaucoup de mini-jeux
+								que le joueur peut faire pour gagner des récompenses intéressantes.</p>
 		<br>
 		<h2 class = "titre">Sommaire</h2>
 		<br>
@@ -25,7 +26,7 @@
 		<h2 class ="titre">Liste des mini-jeux<h2>
 		<br>
 		<ul>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">Jeu du coffre de la forêt</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -39,14 +40,14 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ1_carte.png" alt="Mini-jeux n°1 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ1.png" alt="Mini-jeux n°1 carte" width=200></td>
-						<td>récompenses</td>
+						<td>Des rubis: 1, 20 ou 300</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
 			<br>
 			<br>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">La Course</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -60,14 +61,14 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ2_carte.png" alt="Mini-jeux n°2 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ2.png" alt="Mini-jeux n°2 carte" width=200></td>
-						<td>récompenses</td>
+						<td>1 quart de coeur si la course est faites en moins de 15 secondes</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
 			<br>
 			<br>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">Jeu du coffre de Cocorico</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -81,14 +82,14 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ3_carte.png" alt="Mini-jeux n°3 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ3.png" alt="Mini-jeux n°3 carte" width=200></td>
-						<td>récompenses</td>
+						<td>Des rubis: 1, 20 ou 50</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
 			<br>
 			<br>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">La chasse au trésors</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -102,14 +103,21 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ4_carte.png" alt="Mini-jeux n°4 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ4.png" alt="Mini-jeux n°4 carte" width=200></td>
-						<td>récompenses</td>
+						<td><ul>
+								<li>des rubis:1,5 ou 20</li>
+								<br>
+								<li>de la magie</li>
+								<br>
+								<li>un quart de coeur</li>
+							</ul>
+						</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
 			<br>
 			<br>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">Jeu du coffre du village des Bandits</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -123,14 +131,26 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ5_carte.png" alt="Mini-jeux n°5 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ5.png" alt="Mini-jeux n°5 carte" width=200></td>
-						<td>récompenses</td>
+						<td><ul>
+								<li>des rubis:1,50 ou 100</li>
+								<br>
+								<li>des flèches: 1 ou 10</li>
+								<br>
+								<li>des bombes: 1 ou 3</li>
+								<br>
+								<li>des coeurs: 1 ou 3</li>
+								<br>
+								<li>un quart de coeur</li>
+								<br>
+							</ul>
+						</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
 			<br>
 			<br>
-			<li class = "ligne">Nom du Mini-jeux</li>
+			<li class = "boite boite3">Tir à l'arc</li>
 			<br>
 			<table class = "ligne">
 				<thead>
@@ -144,11 +164,21 @@
 					<tr>
 						<th><img src="image/mini-jeux/MJ6_carte.png" alt="Mini-jeux n°6 carte" width=200></th>
 						<td><img src="image/mini-jeux/MJ6.png" alt="Mini-jeux n°6 carte" width=200></td>
-						<td>récompenses</td>
+						<td>Des rubis: 4 rubie pour une cible touchée. Si plusieurs cibles sont touchées,
+						le nombre de rubis est doublée : 4 ,8, 16, 32, 64. La meilleur récompenses est donc de 124 rubis</td>
 					</tr>
 				</tbody>
 			</table>
 		</ul>
 		<br>
+		<form action="" method="post" class="formulaire">
+			<label for="nom">Votre nom :</label><br>
+			<input type="text" id="nom" name="nom" placeholder="nom"><br><br>
+
+			<label for="commentaire">Votre commentaire :</label><br>
+			<textarea id="commentaire" name="commentaire" rows="5" cols="40" placeholder="manque t-il des informations ?"></textarea><br><br>
+
+			<input type="submit" value="Envoyer">
+		</form>
 	</main>
 </body>

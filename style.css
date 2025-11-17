@@ -1,34 +1,66 @@
+.imagefond{
+	background-image: url('image/zeldaalttp.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
 .titre{
 	text-align: center;
 	font-family: "serif", sans-serif;
 }
 .boite{
 	font-size: 18px;
+	background-color:white;
 	font-family: "serif", sans-serif;
 	text-align: center;
 	list-style-type: none;
-	border: 5px solid black;
-	margin: 30px;
+	border: 5px solid yellow;
+	margin: 15%;
 	border-radius: 12px;
 }
+.boite1{
+	border: 5px solid red;
+	padding: 2%;
+	width: 30%;
+	height: 5%;
+	margin-left: 30%;
+}
+.boite2{
+	border: 5px solid blue;
+	padding: 2%;
+	width: 30%;
+	height: 5%;
+	margin-left: 30%;
+}
+.boite3{
+	border: 5px solid green;
+	padding: 2%;
+	width: 30%;
+	height: 5%;
+	margin-left: 30%;
+}
+
 .paragraphe{
 	font-family: "serif", sans-serif;
 	text-align: center;
-	font-size: 18px;
+	font-size: 100%;
+	margin : 5%;
+	border : 5px solid black ;
+	border-radius: 12px;
+	padding: 2%;
 }
 .ligne{
 	font-size: 18px;
 	font-family: "serif", sans-serif;
 	text-align: center;
 	list-style-type: none;
+	margin: 5%;
 }
 .video{
 	display: flex;              
-    justify-content: center;       
-}
-.image{
-	display: flex;              
     justify-content: center;
+	margin:5%;
 }
 .button {
 	background-color: black;
@@ -57,7 +89,7 @@
   --p: 100%;
   --t: 0.3s;
   color: #fff;
-  cursor : url("image/curseur/triforce.cur"),auto;
+  cursor : url("image/triforce.cur"),auto;
 }
 .liquid2 {
   background: linear-gradient(blue 0 0) no-repeat calc(200% - var(--p, 0%))
@@ -70,7 +102,7 @@
   --p: 100%;
   --t: 0.3s;
   color: #fff;
-  cursor : url("image/curseur/triforce.cur"),auto;
+  cursor : url("image/triforce.cur"),auto;
 }
 .liquid3 {
   background: linear-gradient(green 0 0) no-repeat calc(200% - var(--p, 0%))
@@ -83,14 +115,14 @@
   --p: 100%;
   --t: 0.3s;
   color: #fff;
-  cursor : url("image/curseur/triforce.cur"),auto;
+  cursor : url("image/triforce.cur"),auto;
 }
 
 .pulse {
   background-color: blue;
   color: white;
   animation: pulse 1.5s infinite;
-  cursor : url("image/curseur/triforce.cur"),auto;
+  cursor : url("image/triforce.cur"),auto;
 }
 
 .border {
@@ -132,12 +164,55 @@
   }
 }
 
-.button1 {border: 2px solid #FFFFFF;}
-.button1 {border-radius: 12px;}
-		
-.black-text-shadow {
-	text-shadow: black 0 -2px;
+.formulaire{
+width: 350px;
+  padding: 20px;
+  margin: 50px auto;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: "serif", sans-serif;
 }
+.formulaire label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.formulaire input,
+.formulaire textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+
+.formulaire button {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulaire button:hover {
+  background: #357ab8;
+}
+
 table {
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
